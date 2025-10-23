@@ -1,0 +1,178 @@
+/* ---------- General ---------- */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  color: #111827;
+}
+
+h1, h2, h3 {
+  color: #1e3a8a;
+}
+
+.contenedor {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.panel-izq, .panel-der {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 320px;
+}
+
+/* ---------- Formulario ---------- */
+form input,
+form textarea,
+form button {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: #f9fafb;
+}
+
+form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37,99,235,0.3);
+}
+
+form button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ---------- Lista de currículos ---------- */
+.lista {
+  margin-top: 1rem;
+}
+
+.lista h2 {
+  margin-bottom: 0.5rem;
+}
+
+.lista .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0e7ff;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #111827;
+}
+
+.lista .item:hover {
+  background-color: #c7d2fe;
+}
+
+.item.seleccionado {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.item.seleccionado strong,
+.item.seleccionado span {
+  color: #f9fafb;
+}
+
+.lista .item button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+.lista .item button:hover {
+  color: #ef4444;
+}
+
+/* ---------- Detalle del currículo ---------- */
+.detalle {
+  margin-top: 1rem;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  position: relative;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+}
+
+.detalle h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.detalle p {
+  margin: 0.3rem 0;
+}
+
+.detalle .cerrar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #374151;
+}
+
+.detalle .cerrar:hover {
+  color: #ef4444;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #1e3a8a;
+}
+
+/* ---------- Mejora de espaciado y legibilidad ---------- */
+.lista .item strong,
+.lista .item span {
+  display: block;
+  line-height: 1.3;
+}
+
+.lista .item strong {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.lista .item span {
+  font-size: 0.9rem;
+  color: #374151;
+}
